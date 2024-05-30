@@ -1,12 +1,16 @@
 public class Person {
-    private String name;
-    private String vorname;
-    private int alter;
+    protected String name;
+    protected String vorname;
+    protected int alter;
 
     public Person(String n, String v, int a) {
         this.name = n;
         this.vorname = v;
         this.alter = a;
+    }
+
+    public Person(String n, int a) {
+        this(n, "", a);
     }
 
     public void geburtstag() {
